@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.test.contractsclient.ContractsViewController">
+
+    <TableView style="-fx-alignment: center;" fx:id="contractTableView" layoutX="34.0"
+               layoutY="157.0" prefWidth="650" prefHeight="300.0">
+        <columns>
+            <TableColumn fx:id="idCol" prefWidth="50.0" style="-fx-alignment: center;" text="ID"/>
+            <TableColumn fx:id="createdAtCol" prefWidth="200" style="-fx-alignment: center;"
+                         text="Создан"/>
+            <TableColumn fx:id="updatedAtCol" prefWidth="200"  style="-fx-alignment: center;"
+                         text="Редактирован"/>
+            <TableColumn fx:id="actualityCol" prefWidth="190" style="-fx-alignment: center;"
+                         text="Актуальность">
+
+            </TableColumn>
+        </columns>
+    </TableView>
+    <Pane layoutY="59.0" prefHeight="3.0" prefWidth="200.0" style="-fx-background-color: black;"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
+    <Text layoutX="26.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Договора"
+          wrappingWidth="245">
+        <font>
+            <Font size="32.0"/>
+        </font>
+    </Text>
+
+</AnchorPane>
